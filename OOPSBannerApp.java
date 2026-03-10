@@ -1,24 +1,24 @@
 /**
- * OOPSBannerApp UC2 – Banner Display Application
+ * OOPSBannerApp UC3 – OOPS Banner Application
  *
- * This class prints the word "OOPS" as a banner
- * using ASCII art with * and spaces.
+ * This class extends UC2 by constructing the banner
+ * using String.join() instead of the + operator.
  *
  * @author Developer
- * @version 2
+ * @version 3.0
  */
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println("  ***    ***   *****   ***** ");
-        System.out.println(" *   *  *   *  *   *  *      ");
-        System.out.println(" *   *  *   *  *   *  *      ");
-        System.out.println(" *   *  *   *  *****   ****  ");
-        System.out.println(" *   *  *   *  *          *  ");
-        System.out.println(" *   *  *   *  *          *  ");
-        System.out.println("  ***    ***   *      *****  ");
+        System.out.println(String.join(" ", " *** ", " *** ", " ***** ", " ***** "));
+        System.out.println(String.join(" ", "*   *", "*   *", "*   * ", "*     "));
+        System.out.println(String.join(" ", "*   *", "*   *", "*   * ", "*     "));
+        System.out.println(String.join(" ", "*   *", "*   *", "***** ", " **** "));
+        System.out.println(String.join(" ", "*   *", "*   *", "*     ", "    * "));
+        System.out.println(String.join(" ", "*   *", "*   *", "*     ", "    * "));
+        System.out.println(String.join(" ", " *** ", " *** ", "*     ", "***** "));
 
     }
 
