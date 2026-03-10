@@ -1,24 +1,30 @@
 /**
- * OOPSBannerApp UC3 – OOPS Banner Application
+ * OOPSBannerApp UC4 – Render OOPS as Banner using String Array and Loop
  *
- * This class extends UC2 by constructing the banner
- * using String.join() instead of the + operator.
+ * This use case improves UC3 by storing banner lines in a String array
+ * and iterating through them using a for-each loop.
  *
  * @author Developer
- * @version 3.0
+ * @version 4
  */
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println(String.join(" ", " *** ", " *** ", " ***** ", " ***** "));
-        System.out.println(String.join(" ", "*   *", "*   *", "*   * ", "*     "));
-        System.out.println(String.join(" ", "*   *", "*   *", "*   * ", "*     "));
-        System.out.println(String.join(" ", "*   *", "*   *", "***** ", " **** "));
-        System.out.println(String.join(" ", "*   *", "*   *", "*     ", "    * "));
-        System.out.println(String.join(" ", "*   *", "*   *", "*     ", "    * "));
-        System.out.println(String.join(" ", " *** ", " *** ", "*     ", "***** "));
+        String[] lines = new String[7];
+
+        lines[0] = String.join(" ", " *** ", " *** ", " ***** ", " ***** ");
+        lines[1] = String.join(" ", "*   *", "*   *", "*   * ", "*     ");
+        lines[2] = String.join(" ", "*   *", "*   *", "*   * ", "*     ");
+        lines[3] = String.join(" ", "*   *", "*   *", "***** ", " **** ");
+        lines[4] = String.join(" ", "*   *", "*   *", "*     ", "    * ");
+        lines[5] = String.join(" ", "*   *", "*   *", "*     ", "    * ");
+        lines[6] = String.join(" ", " *** ", " *** ", "*     ", "***** ");
+
+        for (String line : lines) {
+            System.out.println(line);
+        }
 
     }
 
